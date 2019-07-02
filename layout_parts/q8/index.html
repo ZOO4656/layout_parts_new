@@ -32,26 +32,26 @@
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div class="small">common</div>
-            <div class="small">error</div>
-            <div class="small">disabled</div>
-            <div class="small">shadow</div>
+            <div class="small blue--btn">common</div>
+            <div class="small pink--btn">error</div>
+            <div class="small gray--btn">disabled</div>
+            <div class="small white--btn">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div class="middle">common</div>
-            <div class="middle">error</div>
-            <div class="middle">disabled</div>
-            <div class="middle">shadow</div>
+            <div class="middle blue--btn">common</div>
+            <div class="middle pink--btn">error</div>
+            <div class="middle gray--btn">disabled</div>
+            <div class="middle white--btn">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div class="large">common</div>
-            <div class="large">error</div>
-            <div class="large">disabled</div>
-            <div class="large">shadow</div>
+            <div class="large blue--btn">common</div>
+            <div class="large pink--btn">error</div>
+            <div class="large gray--btn">disabled</div>
+            <div class="large white--btn">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -102,42 +102,53 @@
             <form class="form_box clearfix">
               <div class="form_title">
               <p class="title_text">
-                From Exercise
+                Form Exercise
               </p>
               </div>
               <div class="form clearfix">
                 <div class="left_form">
                   <ul class="input_form">
-                    <li class="name clearfix">名前<span>*</span>
-                      <input type="text" name="name" class="right_from_all" required>
+                    <li class="name input_form_title clearfix">
+                      <div>名前<span>*</span></div>
+                      <input type="text" name="name" class="right_form_all" required>
                     </li>
-                    <li class="gender clearfix">性別
+                    <li class="gender input_form_title clearfix">
+                      <div>性別</div>
+                      <div>
                         <input type="radio" name="gender" value="man" class="radio_input" id="radio_input1">
                         <label class="radio_label" for="radio_input1">男性</label>
                         <input type="radio" name="gender" value="woman" class="radio_input" id="radio_input2">
                         <label class="radio_label" for="radio_input2">女性</label>
+                      </div>
                     </li>
-                    <li class="from clearfix">出身
-                      <select name="from" class="right_from_all from_box">
-                        <option value="1" selected>東京</option>
-                        <option value="2">埼玉</option>
-                        <option value="3">千葉</option>
-                        <option value="4">神奈川</option>
-                      </select>
+                    <li class="input_form_title clearfix">
+                      <div>出身</div>
+                      <div class="from">
+                        <select name="from" class="right_form_all from_box">
+                          <option value="1" selected>東京</option>
+                          <option value="2">埼玉</option>
+                          <option value="3">千葉</option>
+                          <option value="4">神奈川</option>
+                        </select>
+                      </div>
                     </li>
-                    <li class="address clearfix">Eメール<span>*</span>
-                      <input type="text" name="address" placeholder="ex) hoge@gmail.com" class="right_from_all" required>
+                    <li class="address input_form_title clearfix">
+                      <div>Eメール<span>*</span></div>
+                      <input type="text" name="address" placeholder="ex) hoge@gmail.com" class="right_form_all" required>
                     </li>
-                    <li class="phone clearfix">電話番号
-                      <input type="text" name="phone_number" placeholder="ex) 0001112222" class="right_from_all">
+                    <li class="phone input_form_title clearfix">
+                      <div>電話番号</div>
+                      <input type="text" name="phone_number" placeholder="ex) 08012345678" class="right_form_all">
                     </li>
                     <li class="adults_check clearfix">
                       <label>
-                        <input type="checkbox" name="adults_over_check" class="adults_check_box"><span class="check_text">20歳以上です。</span>
+                        <input type="checkbox" name="adults_over_check" class="adults_check_box"><span class="check_text">20歳以上です</span>
                       </label>
                     </li>
                   </ul>
-                  <button type="submit" name="submit" value="submit" class="submit">送信</button>
+                  <div class="input_form_submit">
+                    <button type="submit" name="submit" value="submit" class="submit">送信</button>
+                  </div>
                 </div>
                 <div class="right_form">
                   <textarea placeholder="何かあれば入力してください。"></textarea>

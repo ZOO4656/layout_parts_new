@@ -25,7 +25,7 @@
 }
 
 .top_box_margin {
-	margin: auto;
+	margin: 0 auto;
 }
 
 .middle_box {
@@ -49,8 +49,8 @@
 
 .q6middle_box {
 	display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .is-stable {
@@ -58,16 +58,26 @@
 }
 
 .is-stable .q6__box__inner {
-	padding: 10px;
-    position: relative;
-    top: 85px;
-    margin: auto;
-    box-sizing: border-box;
-    line-height: 10px !important; /*!importantは最優先に適用させるキーワード 多様しないように*/
+  margin: auto;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  box-sizing: border-box;
+  position: absolute;
+  line-height: 10px !important; /*!importantは最優先に適用させるキーワード 多様しないように*/
+}
+
+.is-flexible {
+  position: relative;
 }
 
 .is-flexible p {
-	transform: translate(100px, 85px);
+  top: 50%;
+  left: 50%;
+  position: absolute;
+	transform: translate(-50%, -50%);
 }
 
 /* 回答はここに書いてね */
