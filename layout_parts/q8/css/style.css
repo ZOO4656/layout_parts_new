@@ -143,7 +143,8 @@
 }
 
 .input_form_gender {
-  float: left;
+  width: 180px;
+  float: right;
 }
 
 .input_form_from {
@@ -272,9 +273,9 @@
   appearance: none;
 }
 
-#radio_input1 + label {
+/*#radio_input1 + label {
 	margin-left: 20px;
-}
+}*/
 
 /*一つ上の親要素に↑をつけ直す*/
 
