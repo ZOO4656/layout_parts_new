@@ -10,10 +10,6 @@
   margin-left: 10px;
 }
 
-.small:hover {
-	opacity: 0.7;
-}
-
 .middle {
 	font-size: 20px;
 	border-radius:5px;
@@ -21,10 +17,6 @@
 	padding: 0 20px;
 	display: inline-block;
   margin-left: 10px;
-}
-
-.middle:hover {
-	opacity: 0.7;
 }
 
 .large {
@@ -52,6 +44,8 @@
 .q8--btn div:nth-child(2) {
   margin-left: 0;
 }
+
+/*各ボタンの１つ目に修正*/
 
 /*.q8--btn div:nth-child(2) {
 	background-color: #00BCD4;
@@ -140,20 +134,21 @@
   margin-bottom: 20px;
 }
 
-.input_form_title div {
-	width: 100px;
-	text-align: right;
+.input_form_title {
+  width: 100px;
+  text-align: right;
   line-height: 25px;
-	float: left;
-	margin-right: 0;
+  float: left;
+  margin-right: 0;
 }
 
-/*.name div {
-	width: 80px;
-	text-align: right;
-	float: left;
-	margin-right: 0;
-}*/
+.input_form_gender {
+  float: left;
+}
+
+.input_form_from {
+  float: right;
+}
 
 .name span {
 	color: red;
@@ -212,10 +207,6 @@
 	background-color: #fff;
 }
 
-/*.radio_input:checked + label {
-	color: #009a9a;
-}*/
-
 .radio_input:checked + label::after {
   content: "";
   display: block;
@@ -258,7 +249,7 @@
   display: block;
   position: absolute;
   top: 4px;
-  right: -90px;
+  right: 10px;
   width: 8px;
   height: 8px;
   border-right: 2px solid #E5E5E5;
@@ -270,7 +261,6 @@
 .from_box {
   position: relative;
   padding: 5px;
-  left: 100%;
   border-radius: 2px;
   background-color: #FFF;
   font-size: 12px;
@@ -285,6 +275,8 @@
 #radio_input1 + label {
 	margin-left: 20px;
 }
+
+/*一つ上の親要素に↑をつけ直す*/
 
 .adults_check_box {
 	display: none;
@@ -352,6 +344,14 @@
   border-radius: 5px;
   font-size: 16px;
   line-height: 26px;
+  outline: 0;
+  border: 0;
+}
+
+.submit:active {
+  background-color: #fff;
+  color: #00BCD4;
+  outline: 0;
 }
 
 /* 回答はここに書いてね */
